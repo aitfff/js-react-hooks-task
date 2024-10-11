@@ -26,9 +26,16 @@ const themes = [
 
 const ThemeProvider = ({ children }) => {
   // BEGIN (write your solution here)
+  const [theme, setTheme] = useState(themes[0]);
 
-  // END
+  return (
+    <ThemeContext.Provider value={{ theme, setTheme, themes }}> {/* Pass themes too */}
+      {children}
+    </ThemeContext.Provider>
+  );
 };
+  // END
+
 
 const App = () => (
   <ThemeProvider>

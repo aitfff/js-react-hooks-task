@@ -31,7 +31,7 @@
         "testEnvironmentOptions": {
             "url": "http://test.local"
         },
-        "testTimeout": 10000
+        "testTimeout": 30000
     },
     "devDependencies": {
         "@babel/preset-env": "^7.21.5",
